@@ -1,0 +1,65 @@
+body {
+  background-image: radial-gradient(circle, #b61400, #7e0c01);
+  }
+
+
+.app {
+  background-color: black;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  padding: 30px;
+}
+.app h1 {
+  color: white;
+  padding-bottom: 30px;
+  border-bottom: 1px solid ;
+}
+.quiz h2 {
+  color: white;
+}
+.btn{
+  background: #fff;
+  color: black;
+  width: 100%;
+  border: 1px solid #fff;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover:not([disabled]){
+  background: black;
+  color: white;
+}
+.btn:disabled{
+  cursor: no-drop;;
+}
+#nextBtn{
+  background: #b61400;
+  color: #fff;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: block;
+}
+#nextBtn:hover{
+  background: #9e0d00;
+}
+
+.correct{
+  background: green;
+}
+
+.incorrect{
+  background: red;
+}
+
