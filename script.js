@@ -1,100 +1,128 @@
+
 const questions = [
     {
-        question: "exsample question",
+        question: "Who created the Avengers Initiative?",
         answers: [
-            { text: "option 1", correct: false},
-            { text: "option 2", correct: false},
-            { text: "option 3", correct: false},
-            { text: "option 4", correct: true},
+            { text: "Tony Stark", correct: false},
+            { text: "Steve Rodgers", correct: false},
+            { text: "Nick Fury", correct: true},
+            { text: "Carol Danvers", correct: false},
         ]
     },
     {
-        question: "exsample question",
+        question: "Were does Spider-Man live?",
         answers: [
-            { text: "option 1", correct: false},
-            { text: "option 2", correct: false},
-            { text: "option 3", correct: false},
-            { text: "option 4", correct: true},
+            { text: "Queens, New York", correct: true},
+            { text: "New Asgard, Norway", correct: false},
+            { text: "Brooklyn, New York", correct: false},
+            { text: "Manhattan, New York", correct: false},
         ]
     },
     {
-        question: "exsample question",
+        question: "Who is Charles Xavier's dear friend and enemy? ",
         answers: [
-            { text: "option 1", correct: false},
-            { text: "option 2", correct: false},
-            { text: "option 3", correct: false},
-            { text: "option 4", correct: true},
+            { text: "Deadpool", correct: false},
+            { text: "Magneto", correct: true},
+            { text: "Cyclops", correct: false},
+            { text: "Juggernaut", correct: false},
         ]
     },
     {
-        question: "exsample question",
+        question: "What's the precious mineral from Wakanda?",
         answers: [
-            { text: "option 1", correct: false},
-            { text: "option 2", correct: false},
-            { text: "option 3", correct: false},
-            { text: "option 4", correct: true},
+            { text: "Adamantium", correct: false},
+            { text: "Mithril", correct: false},
+            { text: "Vibranium", correct: true},
+            { text: "Beskar", correct: false},
         ]
     },
     {
-        question: "exsample question",
+        question: "What was the first infinity stone Thanos acquired? ",
         answers: [
-            { text: "option 1", correct: false},
-            { text: "option 2", correct: false},
-            { text: "option 3", correct: false},
-            { text: "option 4", correct: true},
+            { text: "Space", correct: false},
+            { text: "Time", correct: false},
+            { text: "Mind", correct: false},
+            { text: "Power", correct: true},
         ]
     },
     {
-        question: "exsample question",
+        question: "What is the title of Peter's mixtape?",
         answers: [
-            { text: "option 1", correct: false},
-            { text: "option 2", correct: false},
-            { text: "option 3", correct: false},
-            { text: "option 4", correct: true},
+            { text: "The best of Ed Sheeron", correct: false},
+            { text: "Ravager mix", correct: false},
+            { text: "Awesome Mix Vol. 1", correct: true},
+            { text: "Peter's tunes", correct: false},
         ]
     },
     {
-        question: "exsample question",
+        question: "What's the name of Thor's hammer?",
         answers: [
-            { text: "option 1", correct: false},
-            { text: "option 2", correct: false},
-            { text: "option 3", correct: false},
-            { text: "option 4", correct: true},
+            { text: "Stormbreaker", correct: false},
+            { text: "Johnatan", correct: false},
+            { text: "Mjolnir", correct: true},
+            { text: "Stagbreaker", correct: false},
         ]
     },
     {
-        question: "exsample question",
+        question: "What is Groot's catchphrase?",
         answers: [
-            { text: "option 1", correct: false},
-            { text: "option 2", correct: false},
-            { text: "option 3", correct: false},
-            { text: "option 4", correct: true},
+            { text: "My name appears to be Groot", correct: false},
+            { text: "Ill be back", correct: false},
+            { text: "I am Groot", correct: true},
+            { text: "To infinity, and beyond!", correct: false},
         ]
     },
     {
-        question: "exsample question",
+        question: "What is the power sorce of the Iron Man suit?",
         answers: [
-            { text: "option 1", correct: false},
-            { text: "option 2", correct: false},
-            { text: "option 3", correct: false},
-            { text: "option 4", correct: true},
+            { text: "ARC reactor", correct: true},
+            { text: "Zero Point Modules", correct: false},
+            { text: "Radioisotope Thermoelectric Generator", correct: false},
+            { text: "Kyber crystal", correct: false},
         ]
     },
     {
-        question: "exsample question",
+        question: "What metal is Thanos' sword made of?",
         answers: [
-            { text: "option 1", correct: false},
-            { text: "option 2", correct: false},
-            { text: "option 3", correct: false},
-            { text: "option 4", correct: true},
+            { text: "Vibranium", correct: false},
+            { text: "Adamantium", correct: false},
+            { text: "Uru", correct: true},
+            { text: "5 Nokia phones melted together", correct: false},
         ]
-    },
-
+    }
 ];
+
+const questionImg = [
+    "Images/Marvel quiz image 1.png",
+    "Images/Marvel quiz image 2.gif",
+    "Images/Marvel quiz image 3.gif",
+    "Images/Marvel quiz image 4.png",
+    "Images/Marvel quiz image 5.png",
+    "Images/Marvel quiz image 6.gif",
+    "Images/Marvel quiz image 7.gif",
+    "Images/Marvel quiz image 8.gif",
+    "Images/Marvel quiz image 9.gif",
+    "Images/Marvel quiz image 10.png",
+]
+
+const comment = [
+    "You got 0 out of 10 questions right. Perhaps it's time to watch more Marvel movies",
+    "You got 1 out of 10 questions right. Perhaps it's time to watch more Marvel movies",
+    "You got 2 out of 10 questions right. Perhaps it's time to watch more Marvel movies",
+    "You got 3 out of 10 questions right. Perhaps it's time to watch more Marvel movies",
+    "You got 4 out of 10 questions right. That's not too bad ",
+    "You got 5 out of 10 questions right. That's not too bad ",
+    "You got 6 out of 10 questions right. That's good",
+    "You got 7 out of 10 questions right. That's good",
+    "You got 8 out of 10 questions right. That's good very good ",
+    "You got 9 out of 10 questions right. That's good very good ",
+    "You got 10 out of 10 questions right! By Odin's beard you got everything right!!!"
+]
 
 const questionElement = document.getElementById("question");
 const answerBotan = document.getElementById("answerBtns");
 const nextBotan = document.getElementById("nextBtn");
+const image = document.getElementById("img");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -112,11 +140,10 @@ function showQuestion(){
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + ". " +currentQuestion.
-    question;
-
+    questionElement.innerHTML = questionNo + ". " +currentQuestion.question;
 
     
+
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button. innerHTML = answer.text;
@@ -127,7 +154,7 @@ function showQuestion(){
         }
         button.addEventListener("click", selectAnswer);
     });
-
+    image.src = questionImg [currentQuestionIndex];
 
 }
 
@@ -158,7 +185,8 @@ function selectAnswer(e){
 }
 function showScore(){
     resetState();
-    questionElement.innerHTML = 'you got ' + score + ' out of ' + questions.length + '!';
+    image.src = "Images/Marvel quiz image 11.png";
+    questionElement.innerHTML = comment[score];
     nextBotan.innerHTML = "Play Again";
     nextBotan.style.display = "block";
 }
